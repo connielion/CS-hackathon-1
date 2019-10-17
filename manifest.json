@@ -1,6 +1,40 @@
 {
-    "name": "Getting Started Example",
-    "version": "1.0",
-    "description": "Build an Extension!",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "name": "Hackathon Extension",
+    "version": "0.1",
+    "permissions": [
+        "storage"
+    ],
+    "description": "Connie's and Mychal's Awesome Extension!",
+    "background": {
+        "scripts": [
+            "main.js"
+        ],
+        "persistent": false
+    },
+    "icons": [
+        {
+            "src": "images/get_started16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "images/get_started32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "images/get_started48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "images/get_started128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ],
+    "browser_action": {
+        "default_icon": "images/get_started128.png"
+    }
 }
