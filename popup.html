@@ -8,16 +8,19 @@
     <title>BO$$</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body class="extension-body">
+<body id="contents" class="extension-body">
+    <div id="load"></div>
     <div class="container center">
 
         <!--form-->
         <form id="form" action="" method="get" class="form center flex-row sticky">
             <a href="https://www.youtube.com/" target="_blank"><img src="./images/logo.png" alt="logo" class="logo"></a>
 
-            <input id="searchInput" class="search-bar" type="text" name="searchInput" placeholder="What to watch?">
+            <input id="searchInput" value="" class="search-bar" type="text" name="searchInput"
+                placeholder="What to watch?">
             <input id="submitBtn" class="search-btn" type="button" value="Search" name="submitBtn">
         </form>
 

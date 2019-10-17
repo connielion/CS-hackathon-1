@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Boss Button",
+    "name": "Fluff",
     "version": "1.0.0",
     "permissions": [
         "storage"
@@ -21,7 +21,7 @@
         "default_icon": "images/icon16.png",
         "default_popup": "popup.html"
     },
-    "description": "Mini youtube player! Search your favorite cat and dog videos without opening a tab or another window!",
+    "description": "Mini youtube player! Watch your favorite cat and dog videos without opening a tab or another window!",
     "content_scripts": [
         {
             "matches": [
