@@ -1,7 +1,14 @@
+// runs on current tab
 chrome.runtime.onInstalled.addListener(function () {
-    chrome.contextMenus.create({
-        "id": "sampleContextMenu",
-        "title": "Sample Context Menu",
-        "contexts": ["selection"]
+    chrome.storage.sync.set({ color: '#3aa757' }, function () {
+        console.log("The color is green.");
     });
 });
+// click event chrome extension button
+chrome.runtime.onMessage.addListener(
+    function (request, sender, sendResponse) {
+        if (request.message === 'clicked_boss_button') {
+            chrome.runtime.sendMessage({ 'message': 'self_destruct' });
+        }
+    }
+)

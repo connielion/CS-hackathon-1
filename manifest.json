@@ -1,40 +1,34 @@
 {
     "manifest_version": 2,
-    "name": "Hackathon Extension",
-    "version": "0.1",
+    "name": "Boss Button",
+    "version": "1.0.0",
     "permissions": [
         "storage"
     ],
-    "description": "Connie's and Mychal's Awesome Extension!",
+    "icons": {
+        "16": "./images/icon16.png",
+        "32": "./images/icon32.png",
+        "48": "./images/icon48.png",
+        "128": "./images/icon128.png"
+    },
     "background": {
         "scripts": [
-            "main.js"
+            "background.js"
         ],
         "persistent": false
     },
-    "icons": [
-        {
-            "src": "images/get_started16.png",
-            "sizes": "16x16",
-            "type": "image/png"
-        },
-        {
-            "src": "images/get_started32.png",
-            "sizes": "32x32",
-            "type": "image/png"
-        },
-        {
-            "src": "images/get_started48.png",
-            "sizes": "48x48",
-            "type": "image/png"
-        },
-        {
-            "src": "images/get_started128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        }
-    ],
     "browser_action": {
-        "default_icon": "images/get_started128.png"
-    }
+        "default_icon": "images/icon16.png"
+    },
+    "description": "Hide yo a$$, save yo job!!! Download this extension to hide and save all your tabs to local storage when your boss walks by! ",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
 }
