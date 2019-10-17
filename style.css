@@ -19,23 +19,29 @@
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding: 5px;
+}
+.logo {
+    height: 60px;
+    width: 80px;
+    padding-right: 5px;
 }
 .search-bar {
     border-radius: 4px;
     font-size: 16px;
     padding: 2px;
     color: blue;
+    margin-right: 5px;
 }
 .search-btn {
     padding: 8px;
     font-size: 16px;
+    border-radius: 4px;
 }
 
 .video-container {
     color: black;
     height: 250px;
-    width: 400px;
+    width: 380px;
     border: 1px solid red;
-    margin: 0 auto;
 }
