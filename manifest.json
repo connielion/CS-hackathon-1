@@ -21,7 +21,7 @@
         "default_icon": "images/icon16.png",
         "default_popup": "popup.html"
     },
-    "description": "Hide yo a$$, save yo job!!! Download this extension to hide and save all your tabs to local storage when your boss walks by, and reopen them! ",
+    "description": "Mini youtube player! Search your favorite cat and dog videos without opening a tab or another window!",
     "content_scripts": [
         {
             "matches": [
