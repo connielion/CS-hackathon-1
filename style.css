@@ -6,6 +6,7 @@
 }
 .container {
     width: 400px;
+    overflow: auto;
 }
 
 .flex-row {
@@ -26,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    
 }
 .logo {
     height: 40px;
@@ -37,7 +39,7 @@
     font-size: 14px;
     padding: 4px;
     outline: none;
-    color: blue;
+    color: white;
     background-color: rgb(29, 29, 29);
 }
 
