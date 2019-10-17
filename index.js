@@ -1,18 +1,33 @@
 window.addEventListener('load', function () {
 
+
+  // sticky scroll
+  const searchForm = document.getElementById("form");
+  let sticky = searchForm.offsetTop;
+  function scrollBar() {
+    if (window.pageYOffset >= sticky) {
+      searchForm.classList.add("sticky")
+    } else {
+      searchForm.classList.remove("sticky");
+    }
+  }
+
+  window.onscroll = function () { scrollBar() };
+
+
   // Google API key: 
   const apiKey = "AIzaSyAP9m96VRNSNyam2zrAAhSBV9YIWok9Cl8";
-  const searchInput = document.getElementById('searchInput');
+  const searchInput = document.getElementById('searchInput').value;
   console.log(searchInput)
   //console.log(searchInput)
   //let searchContent = searchInput.value;
-  console.log(`outside: `, searchInput.value)
+  console.log(`outside: `, searchInput)
 
   const vidContainer = document.getElementById('videoContainer');
   //console.log(searchTerm)
-  const apiCall = async (e) => {
-    console.log('INSIDE ASYNC: ', searchInput.value)
-    let searchTerm = searchInput.value;
+  const apiCall = async () => {
+    console.log('INSIDE ASYNC: ', searchInput)
+    let searchTerm = searchInput;
     console.log('search term: ', searchTerm) // string
     const api_call = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=relevance&q=${searchTerm}&type=video&key=${apiKey}`)
     const resp = await api_call.json(); // array of objets

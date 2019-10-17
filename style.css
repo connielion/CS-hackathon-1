@@ -21,13 +21,23 @@
     margin: 0 auto;
     padding: 0px;
 }
+.sticky {
+    overflow: hidden;
+    position: sticky;
+  top: 0;
+  width: 100%;
+}
 
 .form {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
     padding: 5px;
-    
+    background-color: #000;
+}
+iframe {
+    outline: none;
+    border: none;
 }
 .logo {
     height: 40px;
@@ -56,9 +66,13 @@
     color: black;
     height: 250px;
     width: 100%;
-    background-color: #000;
+   
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
 }
+
+.scrollable {
+    scrollbar-color: yellow blue;
+  }
