@@ -1,7 +1,11 @@
 .extension-body {
-    height: 255px;
+    height: 285px;
     width: 400px;
-    margin: 0px;   
+    margin: 0px; 
+    padding: 0px;  
+}
+.container {
+    width: 400px;
 }
 
 .flex-row {
@@ -14,6 +18,7 @@
 }
 .center {
     margin: 0 auto;
+    padding: 0px;
 }
 .form {
     margin-top: 5px;
@@ -22,26 +27,29 @@
     padding: 5px;
 }
 .logo {
-    height: 60px;
+    height: 40px;
     width: 80px;
-    padding-right: 5px;
+    padding-right: 3px;
 }
 .search-bar {
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 2px;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
     color: blue;
-    margin-right: 5px;
+    background-color: rgb(63, 104, 100);
 }
+
 .search-btn {
     padding: 8px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 4px;
 }
 
 .video-container {
     color: black;
     height: 250px;
-    width: 380px;
-    border: 1px solid red;
+    width: 100%;
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
 }
