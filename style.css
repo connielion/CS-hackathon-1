@@ -20,6 +20,7 @@
     margin: 0 auto;
     padding: 0px;
 }
+
 .form {
     margin-top: 5px;
     display: flex;
@@ -56,4 +57,6 @@
     background-color: #000;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
