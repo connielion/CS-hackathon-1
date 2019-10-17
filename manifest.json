@@ -20,7 +20,7 @@
     "browser_action": {
         "default_icon": "images/icon16.png"
     },
-    "description": "Hide yo a$$, save yo job!!! Download this extension to hide and save all your tabs to local storage when your boss walks by! ",
+    "description": "Hide yo a$$, save yo job!!! Download this extension to hide and save all your tabs to local storage when your boss walks by, and reopen them! ",
     "content_scripts": [
         {
             "matches": [
