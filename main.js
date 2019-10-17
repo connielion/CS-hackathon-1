@@ -20,3 +20,28 @@ chrome.runtime.onMessage.addListener(
     }
 );
 
+const input = document.getElementById('searchInput');
+let inputval = input.value;
+console.log(inputval)
+function logInput(e) {
+    e.preventDefault();
+
+    console.log(inputval);
+}
+
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', logInput())
+/*
+function get(){
+
+}
+
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', get())
+
+let source = changeSrc()
+const iframeTag = document.getElementsById('iframe');
+iframeTag.setAttribute('src', source);
+*/
+
