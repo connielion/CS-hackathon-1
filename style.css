@@ -34,15 +34,19 @@
 .search-bar {
     border-radius: 10px;
     font-size: 14px;
+    padding: 4px;
     outline: none;
     color: blue;
-    background-color: rgb(63, 104, 100);
+    background-color: rgb(29, 29, 29);
 }
 
 .search-btn {
     padding: 8px;
     font-size: 14px;
     border-radius: 4px;
+    outline: none;
+    color: rgb(135, 191, 171);
+    background-color: rgb(29, 29, 29)
 }
 
 .video-container {
