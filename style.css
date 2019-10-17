@@ -1,5 +1,41 @@
-html,body {
-    height: 400px;
+.extension-body {
+    height: 255px;
     width: 400px;
-    border-radius: 10px;
+    margin: 0px;   
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    margin: 0 auto;
+}
+.form {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.search-bar {
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 2px;
+    color: blue;
+}
+.search-btn {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.video-container {
+    color: black;
+    height: 250px;
+    width: 400px;
+    border: 1px solid red;
+    margin: 0 auto;
 }
