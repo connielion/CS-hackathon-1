@@ -1,15 +1,15 @@
-document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'interactive') {
-    document.getElementById('contents').style.visibility = "hidden";
-  } else if (state == 'complete') {
-    setTimeout(function () {
-      document.getElementById('interactive');
-      document.getElementById('load').style.visibility = "hidden";
-      document.getElementById('contents').style.visibility = "visible";
-    }, 1000);
-  }
-}
+// document.onreadystatechange = function () {
+//   var state = document.readyState
+//   if (state == 'interactive') {
+//     document.getElementById('contents').style.visibility = "hidden";
+//   } else if (state == 'complete') {
+//     setTimeout(function () {
+//       document.getElementById('interactive');
+//       document.getElementById('load').style.visibility = "hidden";
+//       document.getElementById('contents').style.visibility = "visible";
+//     }, 1000);
+//   }
+// }
 window.addEventListener('DOMContentLoaded', function () {
 
   document.body.addEventListener('keydown', function (e) {
@@ -17,6 +17,21 @@ window.addEventListener('DOMContentLoaded', function () {
       window.close();
     }
   })
+
+  function toggleColor() {
+    let vcontainer = document.getElementById("videoContainer");
+    let bgColor = vidContainer.style.backgroundColor;
+    vcontainer.style.backgroundColor = bgColor === "black" ? "white" : "black";
+  };
+
+  function start() {
+    let cbox = document.getElementById("checkbox");
+
+    cbox.addEventListener('change', toggleColor)
+
+  }
+  start();
+
 
   // sticky scroll
   const searchForm = document.getElementById("form");
@@ -49,9 +64,11 @@ window.addEventListener('DOMContentLoaded', function () {
         if (res.status == 200) {
 
           return res.clone().json().then(data => {
+            console.log(`data: `, data.items.length)
             for (let i = 0; i < data.items.length; i++) {
               // for each video, create iframe tag
               const iframeTag = document.createElement('iframe');
+              iframeTag.style.height = "150px"
               let vidId = data.items[i].id.videoId;
               //console.log('video ID: ', vidId)
 
